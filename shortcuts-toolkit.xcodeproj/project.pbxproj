@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4C7CC772940FC2800250EA6 /* shortcuts_toolkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CC762940FC2800250EA6 /* shortcuts_toolkitApp.swift */; };
+		B4C7CC772940FC2800250EA6 /* ShortcutsToolkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CC762940FC2800250EA6 /* ShortcutsToolkitApp.swift */; };
 		B4C7CC792940FC2800250EA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CC782940FC2800250EA6 /* ContentView.swift */; };
 		B4C7CC7B2940FC2C00250EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C7CC7A2940FC2C00250EA6 /* Assets.xcassets */; };
 		B4C7CC7F2940FC2C00250EA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C7CC7E2940FC2C00250EA6 /* Preview Assets.xcassets */; };
 		B4C7CC892940FC2D00250EA6 /* shortcuts_toolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CC882940FC2D00250EA6 /* shortcuts_toolkitTests.swift */; };
 		B4C7CC932940FC2D00250EA6 /* shortcuts_toolkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CC922940FC2D00250EA6 /* shortcuts_toolkitUITests.swift */; };
 		B4C7CC952940FC2D00250EA6 /* shortcuts_toolkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CC942940FC2D00250EA6 /* shortcuts_toolkitUITestsLaunchTests.swift */; };
+		B4C7CCA42940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CCA32940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift */; };
+		B4C7CCA72943C8E400250EA6 /* CGRect+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CCA62943C8E400250EA6 /* CGRect+Geometry.swift */; };
+		B4C7CCA92944C6B000250EA6 /* String+Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CCA82944C6B000250EA6 /* String+Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		B4C7CC732940FC2800250EA6 /* shortcuts-toolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shortcuts-toolkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4C7CC762940FC2800250EA6 /* shortcuts_toolkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortcuts_toolkitApp.swift; sourceTree = "<group>"; };
+		B4C7CC762940FC2800250EA6 /* ShortcutsToolkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsToolkitApp.swift; sourceTree = "<group>"; };
 		B4C7CC782940FC2800250EA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4C7CC7A2940FC2C00250EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C7CC7C2940FC2C00250EA6 /* shortcuts_toolkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shortcuts_toolkit.entitlements; sourceTree = "<group>"; };
@@ -45,6 +48,9 @@
 		B4C7CC8E2940FC2D00250EA6 /* shortcuts-toolkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "shortcuts-toolkitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C7CC922940FC2D00250EA6 /* shortcuts_toolkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortcuts_toolkitUITests.swift; sourceTree = "<group>"; };
 		B4C7CC942940FC2D00250EA6 /* shortcuts_toolkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortcuts_toolkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4C7CCA32940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnnotationsAsMarkdownIntent.swift; sourceTree = "<group>"; };
+		B4C7CCA62943C8E400250EA6 /* CGRect+Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Geometry.swift"; sourceTree = "<group>"; };
+		B4C7CCA82944C6B000250EA6 /* String+Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Quote.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,9 @@
 		B4C7CC752940FC2800250EA6 /* shortcuts-toolkit */ = {
 			isa = PBXGroup;
 			children = (
-				B4C7CC762940FC2800250EA6 /* shortcuts_toolkitApp.swift */,
-				B4C7CC782940FC2800250EA6 /* ContentView.swift */,
+				B4C7CCA52943C8C300250EA6 /* Helpers */,
+				B4C7CCA22940FCA300250EA6 /* Intents */,
+				B4C7CCA12940FC9C00250EA6 /* Views */,
 				B4C7CC7A2940FC2C00250EA6 /* Assets.xcassets */,
 				B4C7CC7C2940FC2C00250EA6 /* shortcuts_toolkit.entitlements */,
 				B4C7CC7D2940FC2C00250EA6 /* Preview Content */,
@@ -127,6 +134,32 @@
 				B4C7CC942940FC2D00250EA6 /* shortcuts_toolkitUITestsLaunchTests.swift */,
 			);
 			path = "shortcuts-toolkitUITests";
+			sourceTree = "<group>";
+		};
+		B4C7CCA12940FC9C00250EA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4C7CC762940FC2800250EA6 /* ShortcutsToolkitApp.swift */,
+				B4C7CC782940FC2800250EA6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4C7CCA22940FCA300250EA6 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				B4C7CCA32940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		B4C7CCA52943C8C300250EA6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4C7CCA62943C8E400250EA6 /* CGRect+Geometry.swift */,
+				B4C7CCA82944C6B000250EA6 /* String+Quote.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4C7CC792940FC2800250EA6 /* ContentView.swift in Sources */,
-				B4C7CC772940FC2800250EA6 /* shortcuts_toolkitApp.swift in Sources */,
+				B4C7CCA92944C6B000250EA6 /* String+Quote.swift in Sources */,
+				B4C7CCA42940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift in Sources */,
+				B4C7CC772940FC2800250EA6 /* ShortcutsToolkitApp.swift in Sources */,
+				B4C7CCA72943C8E400250EA6 /* CGRect+Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
