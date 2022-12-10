@@ -1,3 +1,19 @@
+//  Shortcuts Toolkit.
+//  Copyright (C) 2022  Zhuravskii Maskim <paperlark@yandex.com>
+//
+//  This program is free software: you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation, either version 3 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License
+//  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 import AppIntents
 import Foundation
 import PDFKit
@@ -5,17 +21,13 @@ import PDFKit
 // TODO: add get PDF metadata intent
 struct GetAnnotationsAsMarkdownIntent: AppIntent {
     static var title: LocalizedStringResource = "Get PDF annotations as Markdown"
-
     static var description =
         IntentDescription("Gets annotations from PDF file in Markdown format")
-
     static var parameterSummary: some ParameterSummary {
         Summary("Get annotations from \(\.$file)")
     }
     static var openAppWhenRun: Bool = false
-
     static var authenticationPolicy: IntentAuthenticationPolicy = .requiresLocalDeviceAuthentication
-
     static var persistentIdentifier: String = "GetAnnotationsAsMarkdownIntent"
 
     init() {}

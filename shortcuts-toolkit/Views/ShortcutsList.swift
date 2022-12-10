@@ -14,18 +14,31 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+
 import SwiftUI
 
-struct ContentView: View {
+struct ShortcutsList: View {
     var body: some View {
-        NavigationView {
-            ShortcutsList()
+        VStack {
+            ScrollView(.vertical) {
+                CardView {
+                    VStack(alignment: .leading) {
+                        Text(GetAnnotationsAsMarkdownIntent.title)
+                            .font(.headline)
+                            .padding(.bottom)
+                        Text(GetAnnotationsAsMarkdownIntent.description.descriptionText)
+                    }
+                }
+            }.padding()
         }
+            .navigationTitle("Available actions")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ShortcutsList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ShortcutsList()
+        }
     }
 }

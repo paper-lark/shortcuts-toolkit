@@ -17,6 +17,8 @@
 		B4C7CCA42940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CCA32940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift */; };
 		B4C7CCA72943C8E400250EA6 /* CGRect+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CCA62943C8E400250EA6 /* CGRect+Geometry.swift */; };
 		B4C7CCA92944C6B000250EA6 /* String+Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CCA82944C6B000250EA6 /* String+Quote.swift */; };
+		B4C7CCAB2944D3B700250EA6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CCAA2944D3B700250EA6 /* CardView.swift */; };
+		B4C7CCAD2944D52000250EA6 /* ShortcutsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7CCAC2944D52000250EA6 /* ShortcutsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B4C7CCA32940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnnotationsAsMarkdownIntent.swift; sourceTree = "<group>"; };
 		B4C7CCA62943C8E400250EA6 /* CGRect+Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Geometry.swift"; sourceTree = "<group>"; };
 		B4C7CCA82944C6B000250EA6 /* String+Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Quote.swift"; sourceTree = "<group>"; };
+		B4C7CCAA2944D3B700250EA6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B4C7CCAC2944D52000250EA6 /* ShortcutsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 			children = (
 				B4C7CC762940FC2800250EA6 /* ShortcutsToolkitApp.swift */,
 				B4C7CC782940FC2800250EA6 /* ContentView.swift */,
+				B4C7CCAC2944D52000250EA6 /* ShortcutsList.swift */,
+				B4C7CCAA2944D3B700250EA6 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +302,8 @@
 				B4C7CCA92944C6B000250EA6 /* String+Quote.swift in Sources */,
 				B4C7CCA42940FCC800250EA6 /* GetAnnotationsAsMarkdownIntent.swift in Sources */,
 				B4C7CC772940FC2800250EA6 /* ShortcutsToolkitApp.swift in Sources */,
+				B4C7CCAB2944D3B700250EA6 /* CardView.swift in Sources */,
+				B4C7CCAD2944D52000250EA6 /* ShortcutsList.swift in Sources */,
 				B4C7CCA72943C8E400250EA6 /* CGRect+Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +463,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Shortcuts Toolkit";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -493,6 +502,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Shortcuts Toolkit";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
