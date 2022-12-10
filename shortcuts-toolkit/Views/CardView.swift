@@ -18,7 +18,7 @@ import SwiftUI
 
 struct CardView<ChildView: View>: View {
     let child: () -> ChildView
-    
+
     let backgroundColor: Color = Color(UIColor.systemBackground)
 
     var body: some View {
@@ -29,8 +29,7 @@ struct CardView<ChildView: View>: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .fill(backgroundColor)
-                .shadow(radius: 3, x: 3, y: 3)
+                .stroke(Color.secondary, lineWidth: 1)
         )
         .padding(.horizontal, 16)
     }

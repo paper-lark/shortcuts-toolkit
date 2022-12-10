@@ -14,7 +14,6 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-
 import SwiftUI
 
 struct ShortcutsList: View {
@@ -31,13 +30,13 @@ struct ShortcutsList: View {
                 }
             }.padding()
         }
-            .navigationTitle("Available actions")
+        .navigationTitle("Available actions")
     }
 }
 
 struct ShortcutsList_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
+        NavigationStack {
             ShortcutsList()
         }
     }
